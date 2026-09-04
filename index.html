@@ -1,0 +1,1734 @@
+
+        }
+
+
+        /* =========================================================
+           CERTIFICATIONS
+        ========================================================= */
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .cert-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 13px;
+            padding: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            min-height: 255px;
+
+            transition: 0.3s;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(0,255,136,0.38);
+        }
+
+        .cert-icon {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .cert-card h3 {
+            color: var(--white);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .cert-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .cert-btn {
+            color: var(--green);
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .cert-btn:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================================================
+           TRAINING
+        ========================================================= */
+
+        .training-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .training-card {
+            padding: 28px;
+
+            background: rgba(10,18,15,0.7);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .training-card h3 {
+            color: var(--white);
+            margin-bottom: 7px;
+        }
+
+        .training-provider {
+            color: var(--green);
+            font-family: monospace;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .training-card ul {
+            list-style: none;
+        }
+
+        .training-card li {
+            color: var(--muted);
+            margin: 7px 0;
+            font-size: 14px;
+        }
+
+        .training-card li::before {
+            content: "✓";
+            color: var(--green);
+            margin-right: 8px;
+        }
+
+
+        /* =========================================================
+           WORKFLOW
+        ========================================================= */
+
+        .workflow {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .workflow-step {
+            text-align: center;
+            padding: 27px 15px;
+
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            background: rgba(7,13,10,0.7);
+
+            transition: 0.3s;
+        }
+
+        .workflow-step:hover {
+            transform: translateY(-5px);
+            border-color: var(--green);
+        }
+
+        .workflow-step .number {
+            color: var(--green);
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .workflow-step h3 {
+            color: var(--white);
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .workflow-step p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           TOOLKIT
+        ========================================================= */
+
+        .toolkit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tool-category {
+            padding: 25px;
+            border: 1px solid var(--border);
+            background: rgba(8,15,11,0.75);
+            border-radius: 11px;
+        }
+
+        .tool-category h3 {
+            color: var(--green);
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tool {
+            padding: 6px 10px;
+            border: 1px solid rgba(0,255,136,0.13);
+            border-radius: 5px;
+
+            color: #a7bcb2;
+            font-size: 12px;
+            font-family: monospace;
+
+            background: rgba(0,255,136,0.025);
+        }
+
+
+        /* =========================================================
+           PROJECTS
+        ========================================================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            padding: 28px;
+
+            border: 1px solid var(--border);
+            border-radius: 12px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(10,20,15,0.8),
+                    rgba(5,10,8,0.8)
+                );
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0,255,136,0.4);
+        }
+
+        .project-card .project-number {
+            color: var(--green);
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .project-card h3 {
+            color: var(--white);
+            margin: 10px 0;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           SOCIAL MEDIA
+        ========================================================= */
+
+        .social-section {
+            text-align: center;
+        }
+
+        .social-text {
+            max-width: 600px;
+            margin: -35px auto 40px;
+            color: var(--muted);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        .social-circle {
+            width: 68px;
+            height: 68px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(0,255,136,0.2);
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0,255,136,0.07),
+                    rgba(8,15,11,0.8)
+                );
+
+            color: #b9ccc4;
+
+            transition:
+                transform 0.3s,
+                color 0.3s,
+                border-color 0.3s,
+                box-shadow 0.3s;
+        }
+
+        .social-circle svg {
+            width: 27px;
+            height: 27px;
+            fill: currentColor;
+        }
+
+        .social-circle:hover {
+            transform: translateY(-8px) scale(1.05);
+            color: var(--green);
+            border-color: var(--green);
+
+            box-shadow:
+                0 0 25px rgba(0,255,136,0.15);
+        }
+
+        .social-label {
+            margin-top: 12px;
+            font-size: 11px;
+            font-family: monospace;
+            color: #708279;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact-box {
+            max-width: 800px;
+            margin: auto;
+
+            text-align: center;
+
+            padding: 55px 35px;
+
+            border: 1px solid var(--border);
+            border-radius: 15px;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(0,255,136,0.05),
+                    rgba(7,13,10,0.8)
+                );
+        }
+
+        .contact-box h2 {
+            color: var(--white);
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding: 35px 0;
+
+            border-top: 1px solid rgba(0,255,136,0.08);
+
+            text-align: center;
+            color: #63766d;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: var(--green);
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 950px) {
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid,
+            .cert-grid,
+            .toolkit-grid,
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .workflow {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            section {
+                padding: 80px 0;
+            }
+
+            .nav-container {
+                height: 65px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 100px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero-subtitle {
+                font-size: 20px;
+            }
+
+            .skills-grid,
+            .cert-grid,
+            .training-grid,
+            .toolkit-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .social-circle {
+                width: 62px;
+                height: 62px;
+            }
+
+            .terminal-body {
+                min-height: 290px;
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================= -->
+
+    <nav>
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                OmarAljasem
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="hero-grid">
+
+                <div>
+
+                    <div class="terminal-label">
+                        ~/cybersecurity/penetration-testing
+                    </div>
+
+                    <h1>
+                        Omar<br>
+                        <span>Aljasem</span>
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        Penetration Tester • Cybersecurity
+                    </div>
+
+                    <p class="hero-description">
+                        Penetration Tester with hands-on experience in
+                        Active Directory exploitation, network penetration
+                        testing, web application security, vulnerability
+                        assessment, privilege escalation and offensive
+                        security labs.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="#certifications"
+                           class="btn btn-primary">
+                            View Certifications
+                        </a>
+
+                        <a href="#contact"
+                           class="btn btn-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TERMINAL -->
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <div class="terminal-line">
+                            <span class="green">omar@kali</span>:~$ whoami
+                        </div>
+
+                        <div class="terminal-line">
+                            <span class="white">
+                                Penetration Tester
+                            </span>
+                        </div>
+
+                        <div class="terminal-line">
+                            <span class="green">omar@kali</span>:~$ cat skills.txt
+                        </div>
+
+                        <div class="terminal-line">
+                            Active Directory
+                        </div>
+
+                        <div class="terminal-line">
+                            Web Application Security
+                        </div>
+
+                        <div class="terminal-line">
+                            Network Penetration Testing
+                        </div>
+
+                        <div class="terminal-line">
+                            Privilege Escalation
+                        </div>
+
+                        <div class="terminal-line">
+                            Red Teaming
+                        </div>
+
+                        <div class="terminal-line">
+                            <span class="green">omar@kali</span>:~$ status
+                        </div>
+
+                        <div class="terminal-line">
+                            <span class="white">
+                                [ ACTIVE ] Offensive Security
+                            </span>
+                        </div>
+
+                        <div class="terminal-line">
+                            <span class="green">omar@kali</span>:~$
+                            <span class="cursor"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================= -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 01</span>
+
+                <h2>About Me</h2>
+
+                <p>
+                    Offensive security focused on practical,
+                    hands-on security testing.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="glass-card">
+
+                    <h3>Who I Am</h3>
+
+                    <p>
+                        I am a Penetration Tester focused on offensive
+                        security and practical vulnerability assessment.
+                        My experience comes from hands-on penetration
+                        testing labs, TryHackMe environments and realistic
+                        security simulation scenarios.
+                    </p>
+
+                </div>
+
+
+                <div class="glass-card">
+
+                    <h3>What I Focus On</h3>
+
+                    <p>
+                        My main areas of focus include Active Directory
+                        security, network penetration testing, web
+                        application security, vulnerability exploitation,
+                        privilege escalation, internal network movement
+                        and security reporting.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         SKILLS
+    ========================================================= -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 02</span>
+
+                <h2>Technical Skills</h2>
+
+                <p>
+                    Core offensive security capabilities and areas
+                    of practical experience.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- NETWORK -->
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        01 / NETWORK
+                    </div>
+
+                    <h3>
+                        Network Penetration Testing
+                    </h3>
+
+                    <ul>
+                        <li>Service Enumeration & Banner Grabbing</li>
+                        <li>TCP/IP, DNS & HTTP Analysis</li>
+                        <li>Linux & Windows Exploitation</li>
+                        <li>Linux Privilege Escalation</li>
+                        <li>Lateral Movement</li>
+                        <li>Internal Network Pivoting</li>
+                        <li>Post-Exploitation</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- WEB -->
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        02 / WEB
+                    </div>
+
+                    <h3>
+                        Web Application Security
+                    </h3>
+
+                    <ul>
+                        <li>OWASP Top 10</li>
+                        <li>Authentication & Access Control</li>
+                        <li>Manual Vulnerability Assessment</li>
+                        <li>HTTP Architecture Analysis</li>
+                        <li>Session Security Testing</li>
+                        <li>REST APIs, JSON & JWT</li>
+                        <li>SQLi, XSS & SSTI</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- AD -->
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        03 / AD
+                    </div>
+
+                    <h3>
+                        Active Directory
+                    </h3>
+
+                    <ul>
+                        <li>Active Directory Enumeration</li>
+                        <li>Kerberos Authentication</li>
+                        <li>BloodHound Enumeration</li>
+                        <li>AS-REP Roasting</li>
+                        <li>Kerberoasting</li>
+                        <li>Lateral Movement</li>
+                        <li>Credential Attack Concepts</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         EXPERIENCE
+    ========================================================= -->
+
+    <section id="experience">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 03</span>
+
+                <h2>Professional Experience</h2>
+
+                <p>
+                    Practical security testing and hands-on laboratory
+                    experience.
+                </p>
+
+            </div>
+
+
+            <div class="experience">
+
+                <div class="experience-item">
+
+                    <h3>
+                        Penetration Testing & Security Labs
+                    </h3>
+
+                    <div class="role">
+                        Self-Directed / Hands-on Practice
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            <strong>Active Directory Exploitation:</strong>
+                            Practiced domain enumeration, Kerberos attack
+                            concepts, lateral movement and attack-path
+                            analysis in controlled environments.
+                        </li>
+
+                        <li>
+                            <strong>Web Application Security:</strong>
+                            Tested SQL Injection, XSS, CSRF, IDOR and
+                            file-upload vulnerabilities across security labs.
+                        </li>
+
+                        <li>
+                            <strong>Network Enumeration:</strong>
+                            Performed network reconnaissance and service
+                            enumeration using tools such as Nmap and
+                            vulnerability scanners.
+                        </li>
+
+                        <li>
+                            <strong>Exploitation & Privilege Escalation:</strong>
+                            Practiced controlled exploitation scenarios
+                            across Linux and Windows environments.
+                        </li>
+
+                        <li>
+                            <strong>Reporting:</strong>
+                            Documented security findings, attack paths,
+                            impact and remediation recommendations.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         CERTIFICATIONS
+    ========================================================= -->
+
+    <section id="certifications">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 04</span>
+
+                <h2>Certifications</h2>
+
+                <p>
+                    Professional certifications and verified credentials.
+                </p>
+
+            </div>
+
+
+            <div class="cert-grid">
+
+
+                <!-- eWPTX -->
+
+                <div class="cert-card">
+
+                    <div>
+
+                        <div class="cert-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            eWPTX
+                        </h3>
+
+                        <p>
+                            Web Application Penetration Tester eXtreme
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="https://certs.ine.com/042d25da-3a86-478a-a419-a14db186a36e"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cert-btn"
+                    >
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <!-- eCPPT -->
+
+                <div class="cert-card">
+
+                    <div>
+
+                        <div class="cert-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            eCPPT
+                        </h3>
+
+                        <p>
+                            Professional Penetration Tester
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="https://certs.ine.com/9e8b1284-f76d-4e39-b02a-04c6de65559f"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cert-btn"
+                    >
+                        View Certificate →
+                    </a>
+
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <div class="cert-card">
+
+                    <div>
+
+                        <div class="cert-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            Google Cybersecurity
+                        </h3>
+
+                        <p>
+                            Google Cybersecurity Professional Certificate
+                        </p>
+
+                    </div>
+
+                    <a
+                        href="https://www.coursera.org/account/accomplishments/professional-cert/MPSLLYGEKE4Y"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cert-btn"
+                    >
+                        View Certificate →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         TRAINING
+    ========================================================= -->
+
+    <section id="training">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 05</span>
+
+                <h2>Training & Courses</h2>
+
+                <p>
+                    Intensive cybersecurity and offensive security training.
+                </p>
+
+            </div>
+
+
+            <div class="training-grid">
+
+
+                <!-- THE WAY -->
+
+                <div class="training-card">
+
+                    <h3>
+                        Cybersecurity & Penetration Testing Training Program
+                    </h3>
+
+                    <div class="training-provider">
+                        The Way
+                    </div>
+
+                    <ul>
+                        <li>
+                            Linux systems and command-line operations
+                        </li>
+
+                        <li>
+                            Network penetration testing fundamentals
+                        </li>
+
+                        <li>
+                            Web application security fundamentals
+                        </li>
+
+                        <li>
+                            Common vulnerability classes
+                        </li>
+
+                        <li>
+                            Controlled real-world security simulations
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- NETWORK + WEB -->
+
+                <div class="training-card">
+
+                    <h3>
+                        Penetration Testing Training
+                    </h3>
+
+                    <div class="training-provider">
+                        Network & Web — 6 Months Intensive Training
+                    </div>
+
+                    <ul>
+                        <li>
+                            Networking concepts aligned with Network+
+                        </li>
+
+                        <li>
+                            Network enumeration and exploitation
+                        </li>
+
+                        <li>
+                            Web application penetration testing
+                        </li>
+
+                        <li>
+                            Practical attack scenarios
+                        </li>
+
+                        <li>
+                            Structured penetration testing methodology
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- BUG BOUNTY -->
+
+                <div class="training-card">
+
+                    <h3>
+                        Advanced Bug Bounty Secrets
+                    </h3>
+
+                    <div class="training-provider">
+                        RedNexus
+                    </div>
+
+                    <ul>
+                        <li>Advanced reconnaissance</li>
+                        <li>Attack surface mapping</li>
+                        <li>Modern web vulnerabilities</li>
+                        <li>Authentication & JWT security</li>
+                        <li>REST, GraphQL & Swagger APIs</li>
+                        <li>Advanced XSS & CSRF concepts</li>
+                        <li>Secure code review</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- RED TEAM -->
+
+                <div class="training-card">
+
+                    <h3>
+                        Red Teaming & Ethical Hacking
+                    </h3>
+
+                    <div class="training-provider">
+                        RedNexus
+                    </div>
+
+                    <ul>
+                        <li>Advanced reconnaissance</li>
+                        <li>Web application attack methodologies</li>
+                        <li>Authentication security</li>
+                        <li>API security testing</li>
+                        <li>Access control testing</li>
+                        <li>Real-world security labs</li>
+                        <li>Bug hunting methodologies</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         WORKFLOW
+    ========================================================= -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 06</span>
+
+                <h2>Penetration Testing Workflow</h2>
+
+                <p>
+                    A structured approach to offensive security assessments.
+                </p>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+                    <div class="number">01</div>
+                    <h3>Recon</h3>
+                    <p>
+                        Information gathering and attack surface discovery.
+                    </p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="number">02</div>
+                    <h3>Enumeration</h3>
+                    <p>
+                        Services, technologies and environment mapping.
+                    </p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="number">03</div>
+                    <h3>Analysis</h3>
+                    <p>
+                        Vulnerability identification and validation.
+                    </p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="number">04</div>
+                    <h3>Exploitation</h3>
+                    <p>
+                        Controlled validation of security weaknesses.
+                    </p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="number">05</div>
+                    <h3>Reporting</h3>
+                    <p>
+                        Findings, impact and remediation recommendations.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         SECURITY TOOLKIT
+    ========================================================= -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 07</span>
+
+                <h2>Security Toolkit</h2>
+
+                <p>
+                    Technologies and tools used throughout practical
+                    security labs and assessments.
+                </p>
+
+            </div>
+
+
+            <div class="toolkit-grid">
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Reconnaissance
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">Nmap</span>
+                        <span class="tool">Nessus</span>
+                        <span class="tool">DNS Enumeration</span>
+                        <span class="tool">Subdomain Enumeration</span>
+                        <span class="tool">Attack Surface Mapping</span>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Web Security
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">Burp Suite</span>
+                        <span class="tool">SQLmap</span>
+                        <span class="tool">ffuf</span>
+                        <span class="tool">HTTP Analysis</span>
+                        <span class="tool">API Testing</span>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Active Directory
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">BloodHound</span>
+                        <span class="tool">Impacket</span>
+                        <span class="tool">Mimikatz</span>
+                        <span class="tool">Kerberos</span>
+                        <span class="tool">Windows Security</span>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Exploitation
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">Metasploit</span>
+                        <span class="tool">Custom Scripts</span>
+                        <span class="tool">Privilege Escalation</span>
+                        <span class="tool">Post-Exploitation</span>
+                        <span class="tool">Attack Simulation</span>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Operating Systems
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">Linux</span>
+                        <span class="tool">Kali Linux</span>
+                        <span class="tool">Windows</span>
+                        <span class="tool">Windows Server</span>
+                        <span class="tool">Active Directory</span>
+                    </div>
+
+                </div>
+
+
+                <div class="tool-category">
+
+                    <h3>
+                        Red Team
+                    </h3>
+
+                    <div class="tools">
+                        <span class="tool">Initial Access</span>
+                        <span class="tool">Credential Attacks</span>
+                        <span class="tool">Lateral Movement</span>
+                        <span class="tool">Internal Pivoting</span>
+                        <span class="tool">Post-Exploitation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         PROJECTS
+    ========================================================= -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 08</span>
+
+                <h2>Security Projects</h2>
+
+                <p>
+                    Practical environments and security research projects.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_01
+                    </div>
+
+                    <h3>
+                        Active Directory Lab
+                    </h3>
+
+                    <p>
+                        Built and practiced against controlled Windows
+                        domain environments to understand enumeration,
+                        authentication and attack-path concepts.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_02
+                    </div>
+
+                    <h3>
+                        Web Security Lab
+                    </h3>
+
+                    <p>
+                        Hands-on testing of web application vulnerabilities,
+                        authentication mechanisms, APIs and access control.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_03
+                    </div>
+
+                    <h3>
+                        Network Pentesting Lab
+                    </h3>
+
+                    <p>
+                        Practical network reconnaissance, service enumeration,
+                        vulnerability analysis and controlled exploitation.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_04
+                    </div>
+
+                    <h3>
+                        TryHackMe Practice
+                    </h3>
+
+                    <p>
+                        Continuous hands-on cybersecurity practice across
+                        networking, Linux, Windows, web security and
+                        penetration testing environments.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_05
+                    </div>
+
+                    <h3>
+                        Bug Bounty Research
+                    </h3>
+
+                    <p>
+                        Research and practice focused on reconnaissance,
+                        web application security, APIs and vulnerability
+                        discovery methodologies.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-number">
+                        PROJECT_06
+                    </div>
+
+                    <h3>
+                        Security Reporting
+                    </h3>
+
+                    <p>
+                        Documenting vulnerabilities with technical details,
+                        impact analysis, evidence and remediation guidance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         SOCIAL MEDIA
+    ========================================================= -->
+
+    <section class="social-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>// 09</span>
+
+                <h2>Connect With Me</h2>
+
+            </div>
+
+            <p class="social-text">
+                You can find me on the following platforms.
+            </p>
+
+
+            <div class="social-links">
+
+
+                <!-- TELEGRAM -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://t.me/omaraljasem"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-circle"
+                        aria-label="Telegram"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21.9 3.2c.3-1.2-.5-1.7-1.5-1.3L2.7 8.8C1.5 9.3 1.5 10 2.5 10.3l4.5 1.4 1.7 5.3c.2.7.1 1 .8 1s1-.4 1.4-.8l2.2-2.1 4.6 3.4c.9.5 1.6.2 1.8-.8L21.9 3.2zM8 11.3l10.4-6.5c.5-.3.9-.1.5.2l-8.6 7.8-.3 3.1-1.2-4.6-.8-.2z"/>
+                        </svg>
+
+                    </a>
+
+                    <div class="social-label">
+                        Telegram
+                    </div>
+
+                </div>
+
+
+                <!-- INSTAGRAM -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://www.instagram.com/omaraljasem_/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-circle"
+                        aria-label="Instagram"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+                        </svg>
+
+                    </a>
+
+                    <div class="social-label">
+                        Instagram
+                    </div>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://www.linkedin.com/in/omar-aljasem-3827843a3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-circle"
+                        aria-label="LinkedIn"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.5 8H3V21h3.5V8zM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3zM21 13.5c0-3.9-2.1-5.7-4.9-5.7-2.2 0-3.2 1.2-3.8 2v-1.8H8.8V21h3.5v-6.4c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4V21H21v-7.5z"/>
+                        </svg>
+
+                    </a>
+
+                    <div class="social-label">
+                        LinkedIn
+                    </div>
+
+                </div>
+
+
+                <!-- FACEBOOK -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://www.facebook.com/share/1G7dLJw1aA/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-circle"
+                        aria-label="Facebook"
+                    >
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1V10H8v3h2.6v8h2.9z"/>
+                        </svg>
+
+                    </a>
+
+                    <div class="social-label">
+                        Facebook
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================= -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+                <p>
+                    Interested in cybersecurity, penetration testing,
+                    offensive security or collaboration?
+                </p>
+
+                <div class="buttons"
+                     style="justify-content:center;">
+
+                    <a
+                        href="https://www.linkedin.com/in/omar-aljasem-3827843a3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        LinkedIn Profile
+                    </a>
+
+                    <a
+                        href="https://t.me/omaraljasem"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-secondary"
+                    >
+                        Telegram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © <span id="year"></span>
+                Omar Aljasem.
+                Built with passion for Cybersecurity.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================= -->
+
+    <script>
+
+        // Dynamic year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        // Smooth navigation
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+            link.addEventListener("click", function(e) {
+
+                const target =
+                    document.querySelector(this.getAttribute("href"));
+
+                if (target) {
+
+                    e.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                }
+
+            });
+
+        });
+
+
+        // Console message
+        console.log(
+            "%c Omar Aljasem | Penetration Tester ",
+            "background:#00ff88;color:#031008;font-size:16px;font-weight:bold;padding:8px;"
+        );
+
+        console.log(
+            "Welcome to the portfolio."
+        );
+
+    </script>
+
+
+</body>
+</html>
