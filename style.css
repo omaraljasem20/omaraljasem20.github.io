@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #0a0a0a;
+    border-bottom: 1px solid #222;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #00ff88;
+}
+
+section {
+    padding: 100px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero p:first-child {
+    color: #00ff88;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#hero a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: #00ff88;
+    color: #000;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: bold;
+}
+
+#skills,
+#certifications,
+#projects {
+    display: grid;
+    gap: 25px;
+}
+
+#skills > h2,
+#certifications > h2,
+#projects > h2 {
+    grid-column: 1 / -1;
+}
+
+#skills > div,
+#certifications > div,
+article {
+    border: 1px solid #222;
+    padding: 25px;
+    background: #111;
+}
+
+article a {
+    color: #00ff88;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+}
